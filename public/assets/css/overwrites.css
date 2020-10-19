@@ -1,0 +1,285 @@
+#banner .url {
+    padding: 10px 20px;
+    background-color: #D45B12;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+#play-url:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+ul.actions.special {
+    margin-top: 20px;
+}
+
+table th {
+  padding: 15px !important;
+  vertical-align: middle;
+}
+
+table.product_features {
+  width: 100%;
+}
+
+table.product_features thead .rank_text {
+  transform: rotate(-90deg);
+  transform-origin: right, top;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: right, top;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: right, top;
+  position: absolute;
+  color: #2E3842;
+  text-transform: uppercase;
+  font-size: 30px;
+  left: 100px;
+  top: 45px;
+  border-top: 1px solid var(--theme-border-light);
+  padding-top: 10px;
+  width: 100px;
+  padding-left: 10px;
+}
+
+table.product_features thead .feature_text {
+  color: #2E3842;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 80px 0 0 0px;
+  border-top: 1px solid var(--theme-border-light);
+  width: 140px;
+  padding-top: 12px;
+  position: relative;
+  top: 15px;
+  left: -15px;
+}
+
+table.product_features thead tr th.rankBox {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+table.product_features thead tr th.rankBox small {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e2e2e2;
+}
+
+table.product_features thead tr th.vip {
+  background: #f39c12;
+}
+
+table.product_features thead tr th.vipplus {
+  background: #d35400;
+}
+
+table.product_features thead tr th.legend {
+  background: #27ae60;
+}
+
+table.product_features thead tr th.godly {
+  background: #2980b9;
+}
+
+table.product_features thead tr th.infamous {
+  background: #2c3e50;
+}
+
+table.product_features tbody tr:nth-child(odd) {
+  background: var(--theme-main-color-dark);
+}
+
+table.product_features tbody tr th {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 9px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #39445e;
+  font-family: 'Karla', sans-serif;
+}
+
+table.product_features tbody tr th.feature_name {
+  border: none;
+  border-right: 1px solid #4d5a79;
+  color: var(--main-color);
+}
+
+table.product_features tbody tr th.feature_availability {
+  width: 180px;
+  text-align: center;
+}
+
+table.product_features tbody tr th.feature_availability .fa-check {
+  color: #23dc71;
+}
+
+table.product_features tbody tr th.feature_availability .fa-times {
+  color: #e22d2d;
+}
+
+table td {
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: -45px;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.sale {
+  position: relative;
+  overflow: hidden;
+}
+.sale:after {
+  content: 'ON SALE';
+  background-color: #049500;
+  width: 120px;
+  font-size: 10px;
+  display: block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  right: -35px;
+}
+
+.price-before {
+  text-decoration: line-through;
+  color: #ed4933;
+  display: inline-block;
+  vertical-align: middle;
+}
+.price-after {
+  color: #049500;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sale-logo {
+  font-size: 8px;
+  background-color: #049500;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: relative;
+  top: -1px;
+}
+
+@media screen and (max-width: 736px) {
+  ul.icons.major li:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+.features li:nth-child(11) {
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.features li:nth-child(12) {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+.dark #banner h2 {
+  font-family: 'Creepster', cursive;
+  /* font-family: 'Nosifer', cursive; */
+  /* font-family: 'Butcherman', cursive; */
+  font-size: 2.2em;
+}
+
+.dark #one header h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 1.8em;
+}
+
+.dark .wrapper.style1,
+.dark .wrapper.style3,
+.dark .wrapper.style5,
+.dark #menu {
+  background-color: #273038;
+}
+
+.dark .wrapper.style5,
+.dark .wrapper.style5 table th,
+.dark .wrapper.style5 input[type="submit"], 
+.dark .wrapper.style5 input[type="reset"], 
+.dark .wrapper.style5 input[type="button"], 
+.dark .wrapper.style5 button, 
+.dark .wrapper.style5 .button {
+  color: rgba(255,255,255,0.8);
+}
+
+.dark .wrapper.style5 h2, 
+.dark .wrapper.style5 h3, 
+.dark .wrapper.style5 h4, 
+.dark .wrapper.style5 h5, 
+.dark .wrapper.style5 h6 {
+  color: white;
+}
+
+.dark header h2,
+.dark .wrapper.style5 strong, 
+.dark .wrapper.style5 b,
+.dark .features li:before,
+.dark .spotlight h2,
+.dark header.major h2 {
+  color: #D45B12;
+}
+
+.dark input[type="submit"].primary, 
+.dark input[type="reset"].primary, 
+.dark input[type="button"].primary, 
+.dark button.primary, .button.primary {
+  background-color: #D45B12
+}
+
+.dark input[type="submit"].primary:hover, 
+.dark input[type="reset"].primary:hover, 
+.dark input[type="button"].primary:hover, 
+.dark button.primary:hover, 
+.dark .button.primary:hover {
+  background-color: #D45B12!important;
+  opacity: 0.8;
+}
+
+.dark table.product_features thead .rank_text,
+.dark table.product_features thead .feature_text {
+  color: white;
+}
