@@ -408,7 +408,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="#" class="button primary icon solid fa-shopping-cart">Buy</a></td>
+                      <td><a onclick="buy('5 Infamous Keys', '3.75')" class="button primary icon solid fa-shopping-cart">Buy</a></td>
                       <td><a href="#" class="button primary icon solid fa-shopping-cart">Buy</a></td>
                       <td><a href="#" class="button primary icon solid fa-shopping-cart">Buy</a></td>
                     </tr>
@@ -460,7 +460,27 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <script src="assets/js/main.js"></script>
+
+      <script>
+        function buy(name, amount) {
+          document.getElementById('name').value = name;
+          document.getElementById('amount').value = amount;
+          document.getElementById('buy').submit();
+        }
+      </script>
+
+      <FORM id="buy" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input TYPE="hidden" NAME="currency_code" value="GBP">
+        <input type="hidden" name="business" value="kyjus25@gmail.com">
+        <input type="hidden" name="tax" value="0">
+      
+        <input id="name" type="hidden" name="item_name_1" value="5 Common Keys">
+        <input id="amount" type="hidden" name="amount_1" value="1">
+        <input type="hidden" name="quantity_1" value="1">
+      </FORM>
 
 	</body>
 </html>

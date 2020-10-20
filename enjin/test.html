@@ -1,0 +1,249 @@
+		<!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <header id="header" class="alt">
+          <h1><a href="index.html"><img src="https://raw.githubusercontent.com/kyjus25/thefoxesden/main/images/logo.png" style="margin-bottom: 5px; display: inline-block; vertical-align: middle; height: 30px;"> The Foxes Den</a></h1>
+          <nav id="nav">
+            <ul>
+              <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <!-- <li><a href="#">Forum</a></li> -->
+                    <li><a href="staff.html">Meet the Staff</a></li>
+                    <!-- <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Log In</a></li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+      <!-- Banner -->
+        <section id="banner">
+          <div>
+            <img src="https://raw.githubusercontent.com/kyjus25/thefoxesden/main/images/logo.png" style="margin-bottom: 10px; max-height: 100px;">
+          </div>
+          <div class="inner">
+            <h2>The Foxes Den</h2>
+            <ul class="actions special">
+              <li><div onclick="copy()" class="url" id="play-url">play.thefoxesden.xyz</div></li>
+            </ul>
+            <p>Small server. Massive events.</p>
+          </div>
+          <a href="#one" class="more scrolly">Learn More</a>
+        </section>
+
+      <!-- One -->
+        <section id="one" class="wrapper style1 special">
+          <div class="inner">
+            <header class="major">
+              <h2>🎃 The Halloween Update 🎃</h2>
+              <p><b>All store items 50% off!</b> Offer ends soon, get them while you can!</p>
+              <p>The contest has ended! Congratulations to Jsteelers03 on winning the logo competition! Along with a new rebranding, we have introduced mcMMO to enhance your experience with new skills and abilities.</p>
+            </header>
+            <ul class="icons major">
+              <li>
+                <span class="icon solid fa-wifi major" style="color: white;"></span><br><br><b>Server Status</b>:
+                <span id="status-online" style="color: greenyellow; display: none;">Online</span>
+                <span id="status-offline" style="color: red; display: none;">Offline</span>
+              </li>
+              <li>
+                <span class="icon solid fa-users major" style="color: white;"></span><br><br><b>Current Players</b>: 
+                <span class="tooltip">
+                  <span id="players"></span>
+                  <span id="players-list" class="tooltiptext"></span>
+                </span>
+                
+              </li>
+              <li><span class="icon solid fa-code major" style="color: white;"></span><br><br><b>Version</b>: <span id="version">1.16.3</span></li>
+            </ul>
+          </div>
+        </section>
+
+      <!-- Two -->
+        <section id="two" class="wrapper alt style2">
+          <section class="spotlight">
+            <div class="image"><img id="pic1" src="" alt="" /></div><div class="content">
+              <h2>Join our Discord!</h2>
+              <p>Click <a href="#">here</a> to join our active community on Discord and keep up to date with new features, converse with the members, or post screenshots of your latest Minecraft works of art.</p>
+            </div>
+          </section>
+          <section class="spotlight">
+            <div class="image"><img id="pic2" src="" alt="" /></div><div class="content">
+              <h2>Vote for us!</h2>
+              <p>Vote for our server on the many Minecraft server listings to get free in-game loot and item crates.</p>
+            </div>
+          </section>
+          <section class="spotlight">
+            <div class="image"><img id="pic3" src="" alt="" /></div><div class="content">
+              <h2>Become a VIP!</h2>
+              <p>Head over to our <a href="#">store</a> to unlock kits, player particles, chat prefixes, and even <code>/fly</code> ability.</p>
+            </div>
+          </section>
+        </section>
+        
+        <script>
+          var arr = [];
+          while(arr.length < 3){
+              var r = Math.floor(Math.random() * 10) + 1;
+              if(arr.indexOf(r) === -1) arr.push(r);
+          }
+          document.getElementById('pic1').src = "https://raw.githubusercontent.com/kyjus25/thefoxesden/main/images/pic" + arr[0] + '.png';
+          document.getElementById('pic2').src = "https://raw.githubusercontent.com/kyjus25/thefoxesden/main/images/pic" + arr[1] + '.png';
+          document.getElementById('pic3').src = "https://raw.githubusercontent.com/kyjus25/thefoxesden/main/images/pic" + arr[2] + '.png';
+        </script>
+
+      <!-- Three -->
+        <section id="three" class="wrapper style3 special">
+          <div class="inner">
+            <header class="major">
+              <h2>Server Plugins</h2>
+              <p>Here's a few of the main plugins and features we currently have installed!</p>
+            </header>
+            <ul class="features">
+              <li class="icon fa-compass">
+                <h3>Quests</h3>
+                <p>900+ custom quests ready for you to complete.</p>
+              </li>
+              <li class="icon solid fa-briefcase">
+                <h3>Jobs</h3>
+                <p>Get paid for breaking, placing, killing, fishing, crafting, and more</p>
+              </li>
+              <li class="icon solid fa-home">
+                <h3>Set Home</h3>
+                <p>Use <code>/sethome</code> so you'll never be lost again!</p>
+              </li>
+              <li class="icon solid fa-archive">
+                <h3>Chest Sort</h3>
+                <p>Toggle automatic chest sorting to, well, automatically sort your chests!</p>
+              </li>
+              <li class="icon solid fa-paw">
+                <h3>Pets</h3>
+                <p>Get yourself a Fido! Fidos available as a magma cube or bee!</p>
+              </li>
+              <li class="icon solid fa-tree">
+                <h3>Timber</h3>
+                <p>Making lumberjacking a breeze with the very popular timber plugin.</p>
+              </li>
+              <li class="icon solid fa-gavel">
+                <h3>Grief Prevention</h3>
+                <p>Claim land to ensure nobody destroys your masterpiece!</p>
+              </li>
+              <li class="icon solid fa-coins">
+                <h3>Coins</h3>
+                <p>The universal in-game currency.</p>
+              </li>
+              <li class="icon solid fa-store">
+                <h3>Shops</h3>
+                <p>Buy and sell blocks for coins from anywhere in the game.</p>
+              </li>
+              <li class="icon solid fa-tag">
+                <h3>Tags</h3>
+                <p>Custom chat tags while on the server.</p>
+              </li>
+              <li class="icon solid fa-key">
+                <h3>Keys</h3>
+                <p>Use keys to unlock items bought from the store!</p>
+              </li>
+              <li class="icon solid fa-star">
+                <h3>*NEW* mcMMO</h3>
+                <p>One of the most popular plugins has been brought to TFD. Enhance your gameplay with new skills and abilities.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <!-- CTA -->
+        <section id="cta" class="wrapper style4">
+          <div class="inner">
+            <header>
+              <h2>Join us today</h2>
+              <p>play.thefoxesden.xyz</p>
+            </header>
+            <ul class="actions stacked">
+              <li><a onclick="copy()" class="button fit primary">Copy</a></li>
+              <!-- <li><a href="#" class="button fit">Learn More</a></li> -->
+            </ul>
+          </div>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <!-- <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          </ul> -->
+          <ul class="copyright">
+            <li>&copy; 2020</li><li>The Foxes Den</li>
+          </ul>
+        </footer>
+
+    </div>
+
+  <!-- Scripts -->
+    <!--<script src="https://justinwhite.info/thefoxesden/assets/js/jquery.min.js"></script>-->
+    <script src="https://justinwhite.info/thefoxesden/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://justinwhite.info/thefoxesden/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://justinwhite.info/thefoxesden/assets/js/browser.min.js"></script>
+    <script src="https://justinwhite.info/thefoxesden/assets/js/breakpoints.min.js"></script>
+    <script src="https://justinwhite.info/thefoxesden/assets/js/util.js"></script>
+    <script src="https://justinwhite.info/thefoxesden/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://justinwhite.info/thefoxesden/assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic">
+
+  
+
+  
+    
+    <script>
+      function copy() {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($('#play-url').text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        console.log('url is' + $('#play-url').text());
+
+        Toastify({
+          text: "URL has been copied to the clipboard",
+          duration: 1500, 
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: 'right', // `left`, `center` or `right`
+          backgroundColor: "linear-gradient(to right, #D45B12, #D45B12)",
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          onClick: function(){} // Callback after click
+        }).showToast();
+      }
+    </script>
+
+    <script>
+      jQuery.get( 'https://api.mcsrvstat.us/2/play.thefoxesden.xyz', function( res ) {
+        if (res.online) {
+          document.getElementById('status-online').style.display = 'inline-block';
+        } else {
+          document.getElementById('status-offline').style.display = 'inline-block';
+        }
+        document.getElementById('players').innerHTML = res.players.online;
+        document.getElementById('players-list').innerHTML = res.players.list.join('<br>');
+        document.getElementById('version').innerHTML = res.version;
+      });
+    </script>

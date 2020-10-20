@@ -1,0 +1,1 @@
+document.body.className += ' landing is-preload';

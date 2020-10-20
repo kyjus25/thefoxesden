@@ -1,0 +1,61 @@
+#banner h2 {
+  font-family: 'Creepster', cursive;
+  /* font-family: 'Nosifer', cursive; */
+  /* font-family: 'Butcherman', cursive; */
+  font-size: 2.2em;
+}
+
+#one header h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 1.8em;
+}
+
+.wrapper.style1,
+.wrapper.style3,
+.wrapper.style5,
+#menu {
+  background-color: #273038;
+}
+
+.wrapper.style5,
+.wrapper.style5 table th,
+.wrapper.style5 input[type="submit"], 
+.wrapper.style5 input[type="reset"], 
+.wrapper.style5 input[type="button"], 
+.wrapper.style5 button, 
+.wrapper.style5 .button {
+  color: rgba(255,255,255,0.8);
+}
+
+.wrapper.style5 h2, 
+.wrapper.style5 h3, 
+.wrapper.style5 h4, 
+.wrapper.style5 h5, 
+.wrapper.style5 h6 {
+  color: white;
+}
+
+header h2,
+.wrapper.style5 strong, 
+.wrapper.style5 b,
+.features li:before,
+.spotlight h2,
+header.major h2 {
+  color: #D45B12;
+}
+
+input[type="submit"].primary, 
+input[type="reset"].primary, 
+input[type="button"].primary, 
+button.primary, .button.primary {
+  background-color: #D45B12
+}
+
+input[type="submit"].primary:hover, 
+input[type="reset"].primary:hover, 
+input[type="button"].primary:hover, 
+button.primary:hover, 
+.button.primary:hover {
+  background-color: #D45B12!important;
+  opacity: 0.8;
+}
