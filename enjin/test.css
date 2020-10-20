@@ -13,8 +13,35 @@ body {
     font-size: 1em;
 }
 
+.body-wrap-3,
+#page {
+    min-width: 0;
+}
+
+.element_popup {
+    top: 0 !important;
+    right: 347px !important;
+    position: absolute;
+    z-index: 100;
+    border-style: solid;
+    border-radius: 2px;
+    z-index: 9999999999999;
+}
+
+.mini-avatar {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
 .section-border {
     width: 0;
+}
+
+.fb-like-site {
+    margin-right: 15px;
+    position: relative;
+    top: 1px;
 }
 
 .container .container_body .container_left,
@@ -37,8 +64,35 @@ body {
 .container.with-footer .container_footer,
 .page-outer-left,
 .page-outer-right,
-.container_spacer.first {
+.container_spacer.first,
+#enjin-bar,
+#menu .likes,
+#menu .right .divider {
     display: none;
+}
+
+#menu > ul > li >  a:hover {
+    color: #fff6c7;
+}
+
+#menu #enjin-bar-likes {
+    margin-top: 15px;
+}
+
+#menu .right {
+    margin-top: -25px;
+}
+#menu .right > a {
+    text-decoration: none;
+    border: none;
+    border-top: solid 1px rgba(0, 0, 0, 0.125);
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+    display: block;
+    
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
 }
 
 #page {
@@ -51,6 +105,12 @@ body {
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+
+.menuToggle span {
+    position: relative;
+    top: 13px;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
